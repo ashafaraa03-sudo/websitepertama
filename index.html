@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kuis Oli</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <button class="brand" id="goHome" type="button" aria-label="Kembali ke beranda">
+      <span class="brand-mark" id="brandMark"></span>
+      <span class="brand-name">Kuis Oli</span>
+    </button>
+    <div class="topbar-right">
+      <button class="player" id="goProfile" type="button" aria-label="Buka profil"></button>
+      <button class="icon-btn" id="soundBtn" type="button" aria-pressed="true" aria-label="Suara nyala">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="wave-on" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path class="wave-off" d="M16 9l5 6M21 9l-5 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="screen" class="screen" aria-live="polite"></main>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
